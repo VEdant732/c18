@@ -1,0 +1,57 @@
+<html>
+        <head>
+            
+            <title>
+                Cobra Kai
+            </title>
+            <style>
+                h1{
+                   color: burlywood;
+                }
+                body{
+                    background-color: brown;
+                    
+                }
+                h2{
+                    color: burlywood;
+                    text-align: center;
+                }
+                #p2{
+                    color: burlywood;
+                    text-align: center;
+                    font-size: 25px;
+                }
+            </style>
+        </head>
+            <body  style="text-align: center;" id="Text">
+               <h1> My favorite Show</h1> 
+               <h2>Cobra Kai</h2>
+               <img src="download.png" width="370" height="370" id="image1" onmouseleave="Change_leave()" onmouseover="change_over()">
+               <p style="color: burlywood;">This is a good show</p>
+               <p id="p2">i like this show</p>
+               <br>
+               <hr>
+               <a href="https://en.wikipedia.org/wiki/Cobra_Kai" target="_blank" style="font-size: 20px;color: burlywood;"> Cobra kai</a>
+               <br>
+               <button style="color: blue;" onclick="change_theme()">change theme</button>
+               <button style="color: blue;" onclick="reset_theme()">reset</button>
+               
+               <script>
+                function change_over(){
+                    document.getElementById("image1").src ="images.png";
+                }
+                function Change_leave(){
+                    document.getElementById("image1").src ="download.png";
+                }
+                function change_theme(){
+                    document.getElementById("Text").style.backgroundColor ="white";
+                    document.getElementById("Text").style.color ="black";
+                }
+                function reset_theme(){
+                    document.getElementById("Text").style.backgroundColor ="brown";
+                    document.getElementById("Text").style.color ="burlywood";
+                    
+                }
+               </script>
+            </body>
+</html>
